@@ -28,21 +28,21 @@ La fiecare iterație se efectuează operații aritmetice asupra indexului buclei
 
 **Relații matematice:**
 
-Pentru fiecare iterație \(i\), se calculează:
+Pentru fiecare iterație $$i$$, se calculează:
 
-\[
+$$
 a_i = 2i+n_0
-\]
+$$
 
-\[
+$$
 x_i = 3a_i = 3(2i+n_0)
-\]
+$$
 
 Suma elementelor generate este:
 
-\[
+$$
 S=\sum_{i=0}^{n-1}x_i
-\]
+$$
 
 **Concepte LabVIEW:** For Loop, terminal de iterație, operații aritmetice, array-uri și Add Array Elements.
 
@@ -70,15 +70,15 @@ Sunt prezentate două variante de implementare, utilizând structurile While Loo
 
 **Relația matematică:**
 
-\[
+$$
 y_k=T\cdot u_k+y_{k-1}
-\]
+$$
 
 unde:
-- \(T\) – parametrul de calcul;
-- \(u_k\) – valoarea de intrare;
-- \(y_{k-1}\) – valoarea precedentă;
-- \(y_k\) – valoarea calculată la iterația curentă.
+- $$T$$ – parametrul de calcul;
+- $$u_k$$ – valoarea de intrare;
+- $$y_{k-1}$$ – valoarea precedentă;
+- $$y_k$$ – valoarea calculată la iterația curentă.
 
 Aplicația include implementări iterative ale relației, folosind parametrii de intrare corespunzători.
 
@@ -106,15 +106,15 @@ Calculul este implementat folosind atât While Loop, cât și For Loop, iar rezu
 
 **Relația matematică:**
 
-\[
+$$
 y_k=T\cdot u_k+y_{k-1}+y_{k-2}
-\]
+$$
 
 unde:
-- \(T\) – parametrul de calcul;
-- \(u_k\) – valoarea de intrare;
-- \(y_{k-1}\), \(y_{k-2}\) – cei doi termeni precedenți;
-- \(y_k\) – termenul curent.
+- $$T$$ – parametrul de calcul;
+- $$u_k$$ – valoarea de intrare;
+- $$y_{k-1}$$, $$y_{k-2}$$ – cei doi termeni precedenți;
+- $$y_k$$ – termenul curent.
 
 **Concepte LabVIEW:** While Loop, For Loop, registre de deplasare, recurențe numerice și reprezentare grafică.
 
@@ -133,26 +133,26 @@ Aplicația implementează două calcule recursive interdependente, utilizând va
 Sunt utilizate structurile While Loop și For Loop pentru efectuarea calculelor iterative. Rezultatele celor două variabile sunt afișate în grafice separate.
 
 **Implementare:**
-- Calcularea succesivă a valorilor \(x_k\) și \(y_k\).
+- Calcularea succesivă a valorilor $$x_k$$ și $$y_k$$.
 - Utilizarea valorilor anterioare ale celor două secvențe în calculele curente.
 - Organizarea calculelor în structuri `While Loop` și `For Loop`.
 - Reprezentarea grafică separată a celor două secvențe.
 
 **Relațiile matematice:**
 
-\[
+$$
 x_k=T\cdot u_k+y_{k-1}+x_{k-1}
-\]
+$$
 
-\[
+$$
 y_k=y_{k-1}+x_{k-1}
-\]
+$$
 
 unde:
-- \(T\) – parametrul de calcul;
-- \(u_k\) – valoarea de intrare;
-- \(x_{k-1}\), \(y_{k-1}\) – valorile precedente;
-- \(x_k\), \(y_k\) – valorile curente ale celor două secvențe.
+- $$T$$ – parametrul de calcul;
+- $$u_k$$ – valoarea de intrare;
+- $$x_{k-1}$$, $$y_{k-1}$$ – valorile precedente;
+- $$x_k$$, $$y_k$$ – valorile curente ale celor două secvențe.
 
 **Concepte LabVIEW:** bucle iterative, registre de deplasare, calcule recursive și Waveform Graph.
 
@@ -181,15 +181,15 @@ A doua implementare folosește o structură Flat Sequence Structure, care permit
 
 Selectarea operației se realizează în funcție de valoarea variabilei Boolean:
 
-\[
+$$
 R=
 \begin{cases}
 R_1, & \text{dacă } B=\text{True}\\
 R_2, & \text{dacă } B=\text{False}
 \end{cases}
-\]
+$$
 
-*Notă: \(R_1\) și \(R_2\) reprezintă rezultatele ramurilor condiționale, nu formule aritmetice suplimentare.*
+*Notă: $$R_1$$ și $$R_2$$ reprezintă rezultatele ramurilor condiționale, nu formule aritmetice suplimentare.*
 
 **Concepte LabVIEW:** Boolean Control, Case Structure, Flat Sequence Structure și operații aritmetice.
 
@@ -205,9 +205,9 @@ R_2, & \text{dacă } B=\text{False}
 
 Ecuația analizată este:
 
-\[
+$$
 ax^2+bx+c=0
-\]
+$$
 
 Aplicația permite rezolvarea ecuației de gradul al doilea pe baza coeficienților a, b și c.
 
@@ -218,7 +218,7 @@ Calculul este realizat folosind un Formula Node, care determină discriminantul 
 Sunt afișate și alte rezultate, precum suma și produsul rădăcinilor.
 
 **Implementare:**
-- Introducerea coeficienților \(a\), \(b\) și \(c\).
+- Introducerea coeficienților $$a$$, $$b$$ și $$c$$.
 - Utilizarea unui `Formula Node` pentru efectuarea calculelor matematice.
 - Calcularea discriminantului.
 - Determinarea rădăcinilor și clasificarea acestora.
@@ -228,57 +228,57 @@ Sunt afișate și alte rezultate, precum suma și produsul rădăcinilor.
 
 Discriminantul:
 
-\[
+$$
 D=b^2-4ac
-\]
+$$
 
 Valoarea utilizată pentru calculul rădăcinilor:
 
-\[
+$$
 d=\sqrt{|D|}
-\]
+$$
 
 Rădăcinile calculate de aplicație:
 
-\[
+$$
 x_1=\frac{-b-d}{2a}
-\]
+$$
 
-\[
+$$
 x_2=\frac{-b+d}{2a}
-\]
+$$
 
 Suma și produsul rădăcinilor:
 
-\[
+$$
 s=x_1+x_2
-\]
+$$
 
-\[
+$$
 p=x_1\cdot x_2
-\]
+$$
 
 Pentru cazul rădăcinilor complexe, sunt calculate și componentele:
 
-\[
+$$
 r_1=\frac{-b}{2a}
-\]
+$$
 
-\[
+$$
 r_2=\frac{d}{2a}
-\]
+$$
 
 **Clasificarea soluțiilor în funcție de discriminant:**
 
-- \(D>0\): două rădăcini reale distincte;
-- \(D=0\): o rădăcină reală dublă;
-- \(D<0\): două rădăcini complexe conjugate.
+- $$D>0$$: două rădăcini reale distincte;
+- $$D=0$$: o rădăcină reală dublă;
+- $$D<0$$: două rădăcini complexe conjugate.
 
 În cazul complex, rădăcinile sunt:
 
-\[
+$$
 x_{1,2}=r_1\mp i r_2
-\]
+$$
 
 **Concepte LabVIEW:** Formula Node, expresii matematice, operații numerice și comparații condiționale.
 
@@ -365,21 +365,21 @@ At each iteration, arithmetic operations are performed using the loop iteration 
 
 **Mathematical equations:**
 
-For each iteration \(i\):
+For each iteration $$i$$:
 
-\[
+$$
 a_i=2i+n_0
-\]
+$$
 
-\[
+$$
 x_i=3a_i=3(2i+n_0)
-\]
+$$
 
 The sum of the generated elements is:
 
-\[
+$$
 S=\sum_{i=0}^{n-1}x_i
-\]
+$$
 
 **LabVIEW Concepts:** For Loop, iteration terminal, arithmetic operations, arrays, and Add Array Elements.
 
@@ -407,15 +407,15 @@ Two implementation approaches are provided using While Loop and For Loop structu
 
 **Mathematical equation:**
 
-\[
+$$
 y_k=T\cdot u_k+y_{k-1}
-\]
+$$
 
 where:
-- \(T\) – calculation parameter;
-- \(u_k\) – input value;
-- \(y_{k-1}\) – previous value;
-- \(y_k\) – current value.
+- $$T$$ – calculation parameter;
+- $$u_k$$ – input value;
+- $$y_{k-1}$$ – previous value;
+- $$y_k$$ – current value.
 
 The application includes iterative implementations of this relation using the corresponding input parameters.
 
@@ -443,15 +443,15 @@ The calculation is implemented using both While Loop and For Loop structures, wi
 
 **Mathematical equation:**
 
-\[
+$$
 y_k=T\cdot u_k+y_{k-1}+y_{k-2}
-\]
+$$
 
 where:
-- \(T\) – calculation parameter;
-- \(u_k\) – input value;
-- \(y_{k-1}\), \(y_{k-2}\) – previous terms;
-- \(y_k\) – current term.
+- $$T$$ – calculation parameter;
+- $$u_k$$ – input value;
+- $$y_{k-1}$$, $$y_{k-2}$$ – previous terms;
+- $$y_k$$ – current term.
 
 **LabVIEW Concepts:** While Loop, For Loop, shift registers, numerical recurrence relations, and graphical representation.
 
@@ -470,26 +470,26 @@ This application implements two interdependent recursive calculations using the 
 Both While Loop and For Loop structures are used to perform iterative calculations. The results of the two variables are displayed in separate graphs.
 
 **Implementation:**
-- Sequentially calculate the values \(x_k\) and \(y_k\).
+- Sequentially calculate the values $$x_k$$ and $$y_k$$.
 - Use previous values from both sequences in the current calculations.
 - Organize the calculations using `While Loop` and `For Loop` structures.
 - Display the two sequences in separate graphs.
 
 **Mathematical equations:**
 
-\[
+$$
 x_k=T\cdot u_k+y_{k-1}+x_{k-1}
-\]
+$$
 
-\[
+$$
 y_k=y_{k-1}+x_{k-1}
-\]
+$$
 
 where:
-- \(T\) – calculation parameter;
-- \(u_k\) – input value;
-- \(x_{k-1}\), \(y_{k-1}\) – previous values;
-- \(x_k\), \(y_k\) – current values of the two sequences.
+- $$T$$ – calculation parameter;
+- $$u_k$$ – input value;
+- $$x_{k-1}$$, $$y_{k-1}$$ – previous values;
+- $$x_k$$, $$y_k$$ – current values of the two sequences.
 
 **LabVIEW Concepts:** Iterative loops, shift registers, recursive calculations, and Waveform Graph.
 
@@ -518,13 +518,13 @@ The second implementation uses a Flat Sequence Structure, allowing operations to
 
 The selected operation depends on the Boolean variable:
 
-\[
+$$
 R=
 \begin{cases}
 R_1, & \text{if } B=\text{True}\\
 R_2, & \text{if } B=\text{False}
 \end{cases}
-\]
+$$
 
 *Note: \(R_1\) and \(R_2\) represent the outputs of the conditional branches, not additional arithmetic formulas.*
 
@@ -542,9 +542,9 @@ R_2, & \text{if } B=\text{False}
 
 The equation is:
 
-\[
+$$
 ax^2+bx+c=0
-\]
+$$
 
 This application solves quadratic equations using the coefficients a, b, and c.
 
@@ -555,7 +555,7 @@ Based on the discriminant value, the application identifies whether the equation
 Additional results, including the sum and product of the roots, are also displayed.
 
 **Implementation:**
-- Input the coefficients \(a\), \(b\), and \(c\).
+- Input the coefficients $$a$$, $$b$$, and $$c$$.
 - Use a `Formula Node` to perform mathematical calculations.
 - Calculate the discriminant.
 - Determine and classify the roots.
@@ -565,57 +565,57 @@ Additional results, including the sum and product of the roots, are also display
 
 Discriminant:
 
-\[
+$$
 D=b^2-4ac
-\]
+$$
 
 Value used to calculate the roots:
 
-\[
+$$
 d=\sqrt{|D|}
-\]
+$$
 
 Calculated roots:
 
-\[
+$$
 x_1=\frac{-b-d}{2a}
-\]
+$$
 
-\[
+$$
 x_2=\frac{-b+d}{2a}
-\]
+$$
 
 Sum and product of the roots:
 
-\[
+$$
 s=x_1+x_2
-\]
+$$
 
-\[
+$$
 p=x_1\cdot x_2
-\]
+$$
 
 For complex roots, the following components are calculated:
 
-\[
+$$
 r_1=\frac{-b}{2a}
-\]
+$$
 
-\[
+$$
 r_2=\frac{d}{2a}
-\]
+$$
 
 **Root classification based on the discriminant:**
 
-- \(D>0\): two distinct real roots;
-- \(D=0\): one repeated real root;
-- \(D<0\): two complex conjugate roots.
+- $$D>0$$: two distinct real roots;
+- $$D=0$$: one repeated real root;
+- $$D<0$$: two complex conjugate roots.
 
 For the complex case:
 
-\[
+$$
 x_{1,2}=r_1\mp i r_2
-\]
+$$
 
 **LabVIEW Concepts:** Formula Node, mathematical expressions, numerical operations, and conditional comparisons.
 
